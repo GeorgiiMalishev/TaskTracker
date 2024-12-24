@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres_task
+    environment:
+      POSTGRES_DB: taskDB
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+    ports:
+      - "5432:5432"
